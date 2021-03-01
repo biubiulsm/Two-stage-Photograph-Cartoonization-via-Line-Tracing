@@ -21,7 +21,7 @@ scipy=1.1.0
 - During training, to view training loss plots and visual results, run `python -m visdom.server` and click the URL shown below the command. 
 - To train the model:
 ```bash
-python3 train_fla3.py --dataroot ./datasets/training_datasets --name Two_Stage_Cartoonization --model Two_Stage_Cartoonization --dataset_mode unaligned101 --gpu_ids 0 --resize_or_crop none
+python3 train.py --dataroot ./datasets/training_datasets --name Two_Stage_Cartoonization --model Two_Stage_Cartoonization --dataset_mode unaligned101 --gpu_ids 0 --resize_or_crop none
 ```
 Want to see more intermediate results, check out `./checkpoints/Two_Stage_Cartoonization/web/index.html`.
 
