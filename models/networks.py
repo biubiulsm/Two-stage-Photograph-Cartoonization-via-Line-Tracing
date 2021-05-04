@@ -75,10 +75,10 @@ def define_C(input_nc, output_nc, ngf, netC, norm='batch', use_dropout=False, in
     norm_layer = get_norm_layer(norm_type=norm)
     if netC == 'resnet_9blocks':
         net = ResnetGenerator(input_nc, output_nc, ngf, norm_layer=norm_layer, use_dropout=use_dropout, n_blocks=9)
-    elif netC == 'resnet_9blocks_PG':
-        net = ResnetGenerator_PG(input_nc, output_nc, ngf, norm_layer=norm_layer, use_dropout=use_dropout, n_blocks=9)
-    elif netC == 'resnet_9blocks_PG_Up':
-        net = ResnetGenerator_PG_Up(input_nc, output_nc, ngf, norm_layer=norm_layer, use_dropout=use_dropout, n_blocks=9)
+    elif netC == 'resnet_9blocks_Res':
+        net = ResnetGenerator_Res(input_nc, output_nc, ngf, norm_layer=norm_layer, use_dropout=use_dropout, n_blocks=9)
+    elif netC == 'resnet_9blocks_Res_Up':
+        net = ResnetGenerator_Res_Up(input_nc, output_nc, ngf, norm_layer=norm_layer, use_dropout=use_dropout, n_blocks=9)
     elif netC == 'resnet_9blocks_Up':
         net = ResnetGenerator_Up(input_nc, output_nc, ngf, norm_layer=norm_layer, use_dropout=use_dropout, n_blocks=9)
     elif netC == 'resnet_6blocks':
