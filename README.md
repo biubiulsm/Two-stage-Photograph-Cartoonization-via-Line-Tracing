@@ -28,9 +28,10 @@ Want to see more intermediate results, check out `./checkpoints/Two_Stage_Cartoo
 ## Testing
 - To test the model:
 ```bash
-python3 test.py --dataroot ./datasets/testing_datasets --name Two_Stage_Cartoonization --model Two_Stage_Cartoonization --dataset single --resize_or_crop none --results_dir ./results/ --dataset_mode single 
+python3 test.py --dataroot ./datasets/testing_datasets --name Two_Stage_Cartoonization --model Two_Stage_Cartoonization --dataset_mode single --gpu_ids 0 --resize_or_crop none --results_dir ./results/
 ```
 - The testing results will be saved to the folder: `./results/Two_Stage_Cartoonization/latest_test`.
+- The pretrained models are available at Google Drive: https://drive.google.com/drive/folders/18jrK3Aw0Yx9ZueTQw_yZrhJLedBAyspO?usp=sharing
 
 ## Citation
 ```
