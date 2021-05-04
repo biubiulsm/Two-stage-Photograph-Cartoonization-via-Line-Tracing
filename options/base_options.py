@@ -22,7 +22,7 @@ class BaseOptions():
         parser.add_argument('--ndf', type=int, default=64, help='# of discrim filters in first conv layer')
         parser.add_argument('--netDA', type=str, default='basic', help='selects model to use for netDA')
         parser.add_argument('--netDL', type=str, default='basic', help='selects model to use for netDL')
-        parser.add_argument('--netGA', type=str, default='resnet_9blocks', help='selects model to use for netGA')
+        parser.add_argument('--netGA', type=str, default='resnet_9blocks_Res', help='selects model to use for netGA')
         parser.add_argument('--netGL', type=str, default='resnet_6blocks', help='selects model to use for netGL')
         parser.add_argument('--n_layers_D', type=int, default=3, help='only used if netD==n_layers')
         parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
